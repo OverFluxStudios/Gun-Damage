@@ -6,5 +6,6 @@ description 'A resource that slowly damages guns when they are shot'
 version '1.0.0'
 
 client_scripts{
-    'main.lua'
+    'main.lua',
+    'functions.lua'
 }
