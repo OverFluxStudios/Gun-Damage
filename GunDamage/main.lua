@@ -10,7 +10,7 @@ Citizen.CreateThread(function()
                 weaponDurability = weaponDurability - weapondmg
                 notify(weaponDurability)
                 if weaponDurability <= 0 then
-                    alert("~r~Weapon is too damaged!")
+                    alert("~r~Weapon~r~ is too damaged!")
                     RemoveWeaponFromPed(GetPlayerPed(-1), GetHashKey("weapon_pistol"))
                     canFire = false
                     while canFire == false do
