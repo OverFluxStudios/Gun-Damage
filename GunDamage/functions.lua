@@ -1,11 +1,11 @@
-function  alert(msg)
+function alert(msg) 
     SetTextComponentFormat("STRING")
     AddTextComponentString(msg)
     DisplayHelpTextFromStringLabel(0, 0, 1, -1)
 end
 
-function notify(str)
+function notify(string)
     SetNotificationTextEntry("STRING")
-    AddTextComponentString(str)
+    AddTextComponentString(string)
     DrawNotification(true, false)
 end
