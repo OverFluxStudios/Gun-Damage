@@ -4,11 +4,12 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(1)
         if IsControlJustReleased(1, fireBtn) then
+            local weapondmg = math.random(20)
             if GetSelectedPedWeapon(GetPlayerPed(-1)) == GetHashKey("weapon_pistol") then
-                local weapondmg = math.random(20)
                 weaponDurability = weaponDurability - weapondmg
-                print(weaponDurability)
-                if weaponDurability == 0 then
+                notify(weaponDurability)
+                if weaponDurability <= 0 then
+                    DisablePlayerFiring(GetPlayerPed(-1), true)
                     alert("~r~Weapon is too damaged!")
                 end
             end
