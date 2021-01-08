@@ -1,3 +1,8 @@
+RegisterNetEvent("output")
+AddEventHandler("output", function (arg)
+    TriggerEvent("chatMessage", "[Success] ", {0,255,0}, "Added, " .. arg .. " into the database")
+end)
+
 Citizen.CreateThread(function()
     local fireBtn = 69
     while true do

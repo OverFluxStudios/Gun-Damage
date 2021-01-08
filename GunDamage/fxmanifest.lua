@@ -12,4 +12,7 @@ client_scripts{
 
 shared_script 'config.lua'
 
-server_script 'server.lua'
+server_scripts{
+    'server.lua',
+    '@mysql-async/lib/MySQL.lua'
+} 
