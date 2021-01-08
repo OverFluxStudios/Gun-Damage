@@ -9,3 +9,7 @@ client_scripts{
     'main.lua',
     'functions.lua'
 }
+
+shared_script 'config.lua'
+
+server_script 'server.lua'
